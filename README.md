@@ -13,8 +13,6 @@ config={
     
 };
 
-$(function(){
-
-    $.search().createDiv();
-    
-})
+1、$.search().createDiv(); 显示
+2、$.search().push(key); 添加
+3、$.search().clean();清空
