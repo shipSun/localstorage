@@ -11,12 +11,11 @@
 <input type="text" name="search" value="" id="search"/>
 <input type="submit" name="submit" value="search" id="submit"/>
 </form>
-<ul id="list" style="display:none;border:1px solid red;">
+<ul id="list" style="border:1px solid red;">
     <li><a href="#">aaa</a></li>
 </ul>
 <script>
 $('#search').mouseover(function(){
-	$('#list').css('display','');
 })
 $('#submit').click(function(){
 	var keyword = $('#search').val();

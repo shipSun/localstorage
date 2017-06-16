@@ -79,6 +79,9 @@ search.prototype.createDiv=function(url){
 		target=this.target;
 	}
 	for(i in this.list()){
+		if((i == "remove")){
+			break;
+		}
 		tmp = this.tmp.replace(this.urlName, url+this.data[i].key);
 		html+= tmp.replace(this.keywordName, this.data[i].key);
 	}
